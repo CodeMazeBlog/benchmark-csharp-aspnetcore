@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrpcBackend", "GrpcBackend.csproj", "{F6642409-85F1-4CCE-81E1-C5249903AC8E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharedLibrary", "..\SharedLibrary\SharedLibrary.csproj", "{F513DC32-F8EA-41F6-B199-0D98F9E668B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6642409-85F1-4CCE-81E1-C5249903AC8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6642409-85F1-4CCE-81E1-C5249903AC8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6642409-85F1-4CCE-81E1-C5249903AC8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6642409-85F1-4CCE-81E1-C5249903AC8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F513DC32-F8EA-41F6-B199-0D98F9E668B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F513DC32-F8EA-41F6-B199-0D98F9E668B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F513DC32-F8EA-41F6-B199-0D98F9E668B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F513DC32-F8EA-41F6-B199-0D98F9E668B7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {41BAA50F-A8AC-4D7F-89B3-357844A87D82}
+	EndGlobalSection
+EndGlobal

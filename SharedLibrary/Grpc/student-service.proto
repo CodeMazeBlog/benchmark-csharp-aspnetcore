@@ -1,0 +1,48 @@
+syntax = "proto3";
+
+package StudentGrpcService;
+
+//  the C# namespace where the interface will be implemented into
+option csharp_namespace = "SharedLibrary.Grpc";
+
+message CourseDto {
+    string id = 1;
+    string name = 2;
+    string code = 3;
+}
+
+message StudentDto {
+    string id = 1;
+    string firstName = 2;
+    string lastName = 3;
+    string major = 4;
+    repeated CourseDto courses = 5;
+}
+
+service StudentService {
+    rpc GetStudent(GetStudentRequestDto) returns (GetStudentResponseDto);
+    rpc GetStudents(GetStudentsResponseDto) returns (GetStudentsResponseDto);
+    rpc CreateOrUpdateStudent (CreateOrUpdateStudentRequestDto) returns (CreateOrUpdateStudentResponseDto);
+}
+
+message GetStudentRequestDto {
+    string id = 1;
+}
+message GetStudentResponseDto {
+    StudentDto student = 1;
+    string error = 2;
+}
+
+message GetStudentsRequestDto {}
+message GetStudentsResponseDto {
+    repeated StudentDto students = 1;
+    string error = 2;
+}
+
+message CreateOrUpdateStudentRequestDto {
+    StudentDto student = 1;
+}
+message CreateOrUpdateStudentResponseDto {
+    bool success = 1;
+    string error = 2;
+}
